@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Kérdés küldése</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kapcsolat </h1>
+    </header>
+
+    <div>
+        <a href="index.html">Kezdőlap</a> |
+        <a href="karate-alapelvei.html">A karate alapelvei</a> |
+        <a href="karate-elonyei.html">A karate előnyei</a> |
+        <a href="karate-stilusai.html">A karate stílusai</a>
+        <a href="kapcsolat.html">kapcsolat</a>
+    </div>
+
+    <section id="contact">
+        <h2>Kérdezz bátran!</h2>
+        <p>Ha kérdéseid vannak a karatéról vagy a weboldal tartalmáról, töltse ki az alábbi űrlapot, és  válaszolunk neked.</p>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">E-mail cím:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="question">Kérdés:</label><br>
+            <textarea id="question" name="question" rows="5" required></textarea><br>
+
+            <button type="submit">Kérdés beküldése</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi az a Karate? - Minden jog fenntartva.</p>
+        <p>Kapcsolat: <a href="mailto:info@karate.hu">info@karate.hu</a></p>
+        <p>Telefon: +36 30 123 4567</p>
+    </footer>
+
+</body>
+</html>
